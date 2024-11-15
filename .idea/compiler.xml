@@ -8,9 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="performance-service" />
         <module name="exclusion-service" />
+        <module name="eureka-server" />
         <module name="notification-service" />
         <module name="employee-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Backend" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-server" options="" />
+    </option>
   </component>
 </project>
